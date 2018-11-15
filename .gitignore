@@ -1,0 +1,11 @@
+.idea/
+*.pyc
+.ipynb_checkpoints
+*.geojson
+!data/meta_data
+!data/png/*
+*.pkl
+logs
+model_config
+check_point
+experiment
