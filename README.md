@@ -51,15 +51,15 @@ util/
 
 If you use this code or the data for your research, please cite our paper, [paper link](https://dl.acm.org/citation.cfm?id=3219920):
 
-	```
-	@inproceedings{Liu2018Where,
-	  title={Where Will Dockless Shared Bikes be Stacked? — Parking Hotspots Detection in a New City},
-	  author={Liu, Zhaoyang and Shen, Yanyan and Zhu, Yanmin},
-	  booktitle={The 24th ACM SIGKDD International Conference on Knowledge Discovery & Data Mining},
-	  pages={378-386},
-	  year={2018},
-	}
-	```
+```
+@inproceedings{Liu2018Where,
+  title={Where Will Dockless Shared Bikes be Stacked? — Parking Hotspots Detection in a New City},
+  author={Liu, Zhaoyang and Shen, Yanyan and Zhu, Yanmin},
+  booktitle={The 24th ACM SIGKDD International Conference on Knowledge Discovery & Data Mining},
+  pages={378-386},
+  year={2018},
+}
+```
 
 ## Reference
 1. Our previous work on dockless shared bike distribution inferences, [paper link](http://delivery.acm.org/10.1145/3160000/3159708/p378-liu.pdf?ip=58.196.134.62&id=3159708&acc=ACTIVE%20SERVICE&key=BF85BBA5741FDC6E%2E17676C47DFB149BF%2E4D4702B0C3E38B35%2E4D4702B0C3E38B35&__acm__=1528063105_1c4cb13b6ecdb7cf567e551a8aea900c):
