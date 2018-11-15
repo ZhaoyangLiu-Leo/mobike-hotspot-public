@@ -47,86 +47,55 @@ util/
 	general common functions
 ```
 
-## Run Command
+## Citation
 
-1. Create the checkpoint folder:
-	
-	`>> mkdir check_point`
-	
-2. Create the grid search results saving folder:
-	
-	`>> mkdir model_search_res`
-	
-3. Run script:
-	
+If you use this code or the data for your research, please cite our paper, [paper link](https://dl.acm.org/citation.cfm?id=3219920):
+
 	```
-	>> cd models
-	>> python run.py --model cnn --train_mode source --grid_search --source_city sh --target_city nb --hot_count 100 --gpu 0
+	@inproceedings{Liu2018Where,
+	  title={Where Will Dockless Shared Bikes be Stacked? — Parking Hotspots Detection in a New City},
+	  author={Liu, Zhaoyang and Shen, Yanyan and Zhu, Yanmin},
+	  booktitle={The 24th ACM SIGKDD International Conference on Knowledge Discovery & Data Mining},
+	  pages={378-386},
+	  year={2018},
+	}
 	```
-	
-4. Parameter description:
-	* **model**: model choice for feature network component, mlp/cnn;
-	* **train_mode**: whether combine the domain adaptation process:
-		* source: remove the domain network part;
-		* dann: integrate the domain network to supervise the feature network learning;
-	* **grid_search**: whether grid search for hyper parameters;
-	* **source_city**: source city to transfer;
-	* **target_city**: target city to predict;
-	* **hot_count**: the candidate number of hotspot roads;
-
-5. Remark: 
-	* More details about run configurations, you can refer to the `models/run.py file`;
-	* Different city pair experiments always achieve the best performance under the different hyper-parameter settings, so if you have sufficient computation resources, we will suggest running the **grid search** version of the code.
-
-<!--## Citation
-
-If you use this code or the data for your research, please cite our paper:
-
-```
-@inproceedings{Liu2018Where,
-  title={Where Will Dockless Shared Bikes be Stacked? — Parking Hotspots Detection in a New City},
-  author={Liu, Zhaoyang and Shen, Yanyan and Zhu, Yanmin},
-  booktitle={The 24th ACM SIGKDD International Conference on Knowledge Discovery & Data Mining},
-  pages={378-386},
-  year={2018},
-}
-```-->
 
 ## Reference
 1. Our previous work on dockless shared bike distribution inferences, [paper link](http://delivery.acm.org/10.1145/3160000/3159708/p378-liu.pdf?ip=58.196.134.62&id=3159708&acc=ACTIVE%20SERVICE&key=BF85BBA5741FDC6E%2E17676C47DFB149BF%2E4D4702B0C3E38B35%2E4D4702B0C3E38B35&__acm__=1528063105_1c4cb13b6ecdb7cf567e551a8aea900c):
 
-```
-@inproceedings{Liu2018Inferring,
-  title={Inferring Dockless Shared Bike Distribution in New Cities},
-  author={Liu, Zhaoyang and Shen, Yanyan and Zhu, Yanmin},
-  booktitle={Eleventh ACM International Conference on Web Search and Data Mining},
-  pages={378-386},
-  year={2018},
-}
-```
+	```
+	@inproceedings{Liu2018Inferring,
+	  title={Inferring Dockless Shared Bike Distribution in New Cities},
+	  author={Liu, Zhaoyang and Shen, Yanyan and Zhu, Yanmin},
+	  booktitle={Eleventh ACM International Conference on Web Search and Data Mining},
+	  pages={378-386},
+	  year={2018},
+	}
+	```
 
 2. Bike lane planning work in KDD 2017, [paper link](https://www.microsoft.com/en-us/research/wp-content/uploads/2017/06/main-1.pdf):
 
-```
-@inproceedings{Bao2017Planning,
-  title={Planning Bike Lanes based on Sharing-Bikes' Trajectories},
-  author={Bao, Jie and He, Tianfu and Ruan, Sijie and Li, Yanhua and Zheng, Yu},
-  booktitle={ACM SIGKDD International Conference on Knowledge Discovery and Data Mining},
-  pages={1377-1386},
-  year={2017},
-}
-```
+	```
+	@inproceedings{Bao2017Planning,
+	  title={Planning Bike Lanes based on Sharing-Bikes' Trajectories},
+	  author={Bao, Jie and He, Tianfu and Ruan, Sijie and Li, Yanhua and Zheng, Yu},
+	  booktitle={ACM SIGKDD International Conference on Knowledge Discovery and Data Mining},
+	  pages={1377-1386},
+	  year={2017},
+	}
+	```
 
 3. Unsupervised Domain Adaptation by Backpropagation, [paper link](http://proceedings.mlr.press/v37/ganin15.pdf):
 
-```
-@article{Ganin2014Unsupervised,
-  title={Unsupervised Domain Adaptation by Backpropagation},
-  author={Ganin, Yaroslav and Lempitsky, Victor},
-  pages={1180-1189},
-  year={2014},
-}
-```
+	```
+	@article{Ganin2014Unsupervised,
+	  title={Unsupervised Domain Adaptation by Backpropagation},
+	  author={Ganin, Yaroslav and Lempitsky, Victor},
+	  pages={1180-1189},
+	  year={2014},
+	}
+	```
 
 
 ## License
