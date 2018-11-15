@@ -32,9 +32,6 @@ The project is organized as follows:
 ```
 data/
 	meta_data: multiple source data;
-	road/
-		train_bound: data version for feed forward neural network;
-		train_bound_cnn: data version for convolutional network;
 metrics/
 	the maximum mean discrepancy metric implementation
 models/
